@@ -12,6 +12,7 @@
 		D90E8D5B28F224CD00D106B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90E8D5A28F224CD00D106B4 /* Assets.xcassets */; };
 		D90E8D5E28F224CD00D106B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90E8D5D28F224CD00D106B4 /* Preview Assets.xcassets */; };
 		D90E8D6528F2264000D106B4 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90E8D6428F2264000D106B4 /* Video.swift */; };
+		D9E0F06A28F2F82800E88F2B /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F06928F2F82800E88F2B /* VideoDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D90E8D5A28F224CD00D106B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D90E8D5D28F224CD00D106B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D90E8D6428F2264000D106B4 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		D9E0F06928F2F82800E88F2B /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				D90E8D6428F2264000D106B4 /* Video.swift */,
 				D90E8D5628F224CD00D106B4 /* customListAppApp.swift */,
 				D90E8D5828F224CD00D106B4 /* VideoListView.swift */,
+				D9E0F06928F2F82800E88F2B /* VideoDetailView.swift */,
 				D90E8D5A28F224CD00D106B4 /* Assets.xcassets */,
 				D90E8D5C28F224CD00D106B4 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90E8D5928F224CD00D106B4 /* VideoListView.swift in Sources */,
+				D9E0F06A28F2F82800E88F2B /* VideoDetailView.swift in Sources */,
 				D90E8D6528F2264000D106B4 /* Video.swift in Sources */,
 				D90E8D5728F224CD00D106B4 /* customListAppApp.swift in Sources */,
 			);

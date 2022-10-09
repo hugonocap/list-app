@@ -13,25 +13,29 @@ struct VideoListView: View {
         
         NavigationView {
             List(videos, id: \.id) { video  in
-                HStack {
-                    Image(video.imageName)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 70.0)
-                        .cornerRadius(4.0)
-                        .padding(.vertical, 4.0 )
-                    
-                    VStack(alignment: .leading, spacing: 5.0) {
-                        Text(video.title)
-                            .fontWeight(.semibold)
-                            .lineLimit(2)
-                            .minimumScaleFactor(0.5)
-                        
-                        Text(video.uploadData)
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                    }
-                }
+                 NavigationLink(
+                    destination: VideoDetailView(video: video ),  label: {
+                        HStack {
+                            Image(video.imageName)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 70.0)
+                                .cornerRadius(4.0)
+                                .padding(.vertical, 4.0 )
+                            
+                            VStack(alignment: .leading, spacing: 5.0) {
+                                Text(video.title)
+                                    .fontWeight(.semibold)
+                                    .lineLimit(2)
+                                    .minimumScaleFactor(0.5)
+                                
+                                Text(video.uploadData)
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                    })
+                
             }
             .navigationTitle("Hugo's Top 10")
         }
