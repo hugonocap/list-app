@@ -12,13 +12,13 @@ struct VideoDetailView: View {
     var body: some View {
         VStack() {
             Spacer()
-            
+            // Preview image
             Image(video.imageName)
                 .resizable()
                 .scaledToFit()
                 .frame(height: 150)
                 .cornerRadius(12)
-            
+            // Title
             Text(video.title)
                 .font(.title2)
                 .fontWeight(.semibold)
@@ -27,21 +27,22 @@ struct VideoDetailView: View {
                 .padding(.horizontal)
             
             HStack(spacing: 40.0) {
+                // Views icon
                 Label("\(video.viewCount)", systemImage: "eye.fill")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
-                
+                // Views
                 Text(video.uploadData)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }
-            
+            // Description
             Text(video.description)
                 .font(.body)
                 .padding()
             
             Spacer()
-            
+            // button
             Link(destination: video.url, label: {
                 Text("Watch now!")
                     .bold()
