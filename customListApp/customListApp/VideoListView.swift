@@ -28,23 +28,13 @@ struct VideoCell: View {
     var body: some View {
         HStack {
             // Image preview
-            Image(video.imageName)
-                .resizable()
-                 .scaledToFit()
-                .frame(height: 70.0)
-                .cornerRadius(4.0)
-                .padding(.vertical, 4.0)
+            ListImagePreviewView(imageName: video.imageName)
             
             VStack(alignment: .leading, spacing: 5.0) {
                 // Title
-                Text(video.title)
-                    .fontWeight(.semibold)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.5)
+                ListTitleView(title: video.title)
                 // Upload data
-                Text(video.uploadData)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+                ListUploadDataView(uploadData: video.uploadData)
             }
         }
     }
@@ -53,5 +43,36 @@ struct VideoCell: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         VideoListView()
+    }
+}
+// image preview struct
+struct ListImagePreviewView: View {
+    var imageName: String
+    var body: some View {
+        Image(imageName)
+            .resizable()
+            .scaledToFit()
+            .frame(height: 70.0)
+            .cornerRadius(4.0)
+            .padding(.vertical, 4.0)
+    }
+}
+// title struct
+struct ListTitleView: View {
+    var title: String
+    var body: some View {
+        Text(title)
+            .fontWeight(.semibold)
+            .lineLimit(2)
+            .minimumScaleFactor(0.5)
+    }
+}
+// upload data struct
+struct ListUploadDataView: View {
+    var uploadData: String
+    var body: some View {
+        Text(uploadData)
+            .font(.subheadline)
+            .foregroundColor(.secondary)
     }
 }
