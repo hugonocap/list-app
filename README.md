@@ -1,4 +1,4 @@
-# list-app
+# List App
 
 ## About
 In this mini application, I smoothly began to move to MVVM architecture.
